@@ -165,4 +165,10 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu√
         padding: 5px 20px;
         border-bottom: 0px;
     }
+
+
+/* Inicio main */
+
+main {
+    margin-bottom: 90px;
 }
