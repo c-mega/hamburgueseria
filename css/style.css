@@ -165,6 +165,80 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu�
         padding: 5px 20px;
         border-bottom: 0px;
     }
+}
+
+/* Inicio hero */
+
+.hero {
+    background-image: url("../images/fondo.jpg");
+    height: 50vh;
+    background-repeat: no-repeat; /* que no te repita la imagen */
+    background-size: cover; /* para que cubra el 100% del espacio la imagen */
+    background-position: center center;
+    background-color: #999; /* pones un color oscuro de fondo y la siguiente propiedad, y así se te oscurece la imagen */
+    background-blend-mode: multiply; /* coge los colores de la img y de fondo y los multiplica, los oscurece */
+    display: flex;
+    align-items: center; /* es una propiedad flex, tiene que ir con la regla de display:flex; para que funcione */
+
+}
+
+.hero .container{
+    width: 90%;
+}
+
+.hero h1 {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.50em;
+    color: white;
+}
+
+.hero h2{
+    color: var(--color-principal);
+    font-size: 1.50em; 
+    margin: 1em 0;
+}
+
+.hero p {
+    font-size: 1.15em;
+    color: white;
+}
+
+.boton {
+    display: inline-block; /* se comporta como en bloque pero apareciendo como en línea */
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.15em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid var(--color-principal);
+}
+
+.boton:hover {
+    background-color: transparent;
+    color: var(--color-principal);
+}
+
+.boton i {
+    transition: transform 0.5s;
+}
+
+.boton:hover i {
+    transform: translateX(5px);
+    transition: 1s;
+}
+
+.hero .social li {
+    display: inline-block;
+    font-size: 2em;
+    margin-right: 1em;
+}
+
+.hero .social a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Fin hero */
 
 
 /* Inicio main */
