@@ -243,6 +243,7 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu√
 
 /* Inicio main */
 
+/* Inicio Our Services */
 main {
     margin-bottom: 90px;
 }
@@ -339,3 +340,54 @@ main #ourservices .flex article h3 {
         width: 33.33%;
 }
 }
+/* Fin Our services */
+
+
+/* Inicio seccion About Us */
+
+main #aboutus .flex {
+    flex-direction: column;
+}
+
+main #aboutus .flex .columna {
+    padding: 0.825em;
+}
+
+main #aboutus .flex .columna h3 {
+    font-weight: 700;
+}
+
+main #aboutus .flex .columna h4 {
+    color: var(--color-principal);
+    margin: 1em 0;
+}
+
+main #aboutus .marco { /* efecto de la imagen */
+    border: 3px solid var(--color-principal);
+    transform: rotateZ(10deg);
+    width: 90%;
+    margin: 0 auto;
+    transition: 1s;
+}
+
+main #aboutus .marco img {
+    transform: rotateZ(-10deg);
+    transition: 0.5s;
+}
+
+main #aboutus .columna:hover .marco, main #aboutus .columna:hover .img {
+    transform: rotateZ(0deg);
+}
+
+@media(min-width: 48.000em) {
+    main #aboutus .flex {
+        flex-direction: row;
+    }
+}
+
+
+
+/* Fin seccion About Us */
+
+
+/* Fin Main */
