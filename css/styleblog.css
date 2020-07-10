@@ -1,0 +1,141 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@400;700&display=swap");
+/* se usan de esta manera:
+font-family: 'Handlee', cursive;
+font-family: 'Montserrat', sans-serif; */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css");
+
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+}
+
+:root{ /* el nombre de las propiedades lo eliges tú, son variables */
+    --color-principal: #fa573a;
+    --color-secundario:#21242e;
+    --fuentePrincipal: 'Montserrat', sans-serif;
+    --fuenteSecundaria: 'Handlee', cursive;
+    --anchoMaximo: 1100px;
+
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1em;
+}
+
+img { /* poner esta regla para las imgs siempre, para que se conviertan en elem en bloque */
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container { /* para todos los containers */
+    max-width: var(--anchoMaximo);
+    margin: 0 auto;
+}
+
+/* Inicio header */
+
+header .nav_top {
+    background-color: var(--color-secundario);
+    padding: 20px 10px;
+}
+
+.flex {/* iconos de vertical a horizontal del header */
+    display: flex;
+}
+
+header .nav_top a {
+    color: white;
+    text-decoration: none;
+    font-size: 120%; /* estás aumentando un 20% el tamaño de la fuente */
+}
+
+header .nav_top a span{
+    display: none; /* así solo salen los iconos */
+
+}
+
+header .nav_top .flex {
+    justify-content: space-between; /* reparte el espacio entre los elementos */
+}
+
+header .nav_top i {
+    color: var(--color-principal);
+}
+
+header nav {
+    padding: 20px;
+}
+
+header .logo {
+    max-width: 110px;
+}
+
+header .hamburguesa {  /* para hacer el botón de las tres rayitas(hamburguesa) donde se desplegará el menú */
+    width: 50px;
+    cursor: pointer;
+}
+
+header .hamburguesa div{ /* haciendo las tres rayitas donde se desplegará el menú */
+    border-top: 2px solid #aaa;
+    margin: 10px;
+}
+
+header nav .flex{
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+header nav ul{
+    width: 100%;
+}
+
+header nav ul li a{ /* donde están los items */
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px;
+    border-bottom: 1px solid #aaa;
+    color: #aaa;
+    transition: 1s;
+}
+
+header nav ul li .activo{
+    color: var(--color-principal);
+}
+
+header nav ul li a:hover{
+    color: var(--color-principal)
+
+}
+/* Fin header */
+
+
+
+/* Inicio footer */
+
+footer{
+    background-color: var(--color-secundario);
+    padding: 1.25em 0.65em;
+    text-align: center;
+    /* estas tres propiedades, a continuación, hacen que el footer quede abajo */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+} 
+
+footer p, footer a {
+    color: white;
+}
+
+footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aquí, que hace como una entrada y salida */
+    text-decoration: none;
+}
+/* Fin footer */
+
+/* media query */
