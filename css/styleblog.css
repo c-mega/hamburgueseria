@@ -138,4 +138,157 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu√
 }
 /* Fin footer */
 
-/* media query */
+/* media query header y footer */
+
+@media(min-width: 48.000em) /* 768px, que es donde hay el primer cambio, en tablet */ {
+    header .nav_top a span{
+        display: inline; 
+    }
+
+
+    footer { /* el texto del footer queda alineado a la izq */
+        text-align: left;
+    }
+}
+
+@media(min-width: 62.750em) /* 1004px, segundo cambio*/ {
+    header .hamburguesa {
+        display: none;
+    }
+
+    header nav ul{
+        width: auto;
+        display: flex;
+    }
+
+    header nav ul li a {
+        padding: 5px 20px;
+        border-bottom: 0px;
+    }
+}
+
+/* Inicio Main */
+
+/* Inicio Our Services */
+main {
+    margin-bottom: 90px;
+}
+
+main section {
+    padding: 2.125em;
+
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--color-principal);
+}
+
+main section .underline {
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+main section .underline hr {
+    border-color: var(--color-principal);
+    position: absolute;
+    width: 100%;
+    top: -0.063em;
+}
+
+.blog {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+.blog article {
+    width: 30%;
+    height: 100px;
+    background-color: white;
+    margin: 1.5%;
+}
+
+.blog article .fecha {
+    background-color:var(--color-principal);
+    color: white;
+    padding: 15px;
+    width: 65px;
+    border-radius: 10%;
+    position: absolute;
+    top: 275px;
+    left: 185px;
+    text-align: center;
+        }
+
+.blog article .fecha1 {
+    background-color:var(--color-principal);
+    color: white;
+    padding: 15px;
+    width: 65px;
+    border-radius: 10%;
+    position: absolute;
+    top: 275px;
+    left: 545px;
+    text-align: center;
+}
+
+.blog article .fecha2 {
+    background-color:var(--color-principal);
+    color: white;
+    padding: 15px;
+    width: 65px;
+    border-radius: 10%;
+    position: absolute;
+    top: 275px;
+    left: 910px;
+    text-align: center;
+}
+
+.blog article h3{
+    color: var(--color-secundario);
+    font-size: 1.4em;
+    padding: 10px;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+}
+
+.blog article h4{
+    color: var(--color-principal);
+    font-size: 1em;
+    padding: 15px;
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+}  
+
+.blog article p{
+    color: var(--color-secundario);
+    font-size: 1em;
+    padding: 15px;
+    font-family: var(--fuentePrincipal);
+    text-align: left;
+}  
+
+
+.enlace {
+    text-decoration: none;
+    margin: 1em 0;
+    display: block;
+    color: var(--color-principal);
+}
+
+/* media queries blog */
+
+
