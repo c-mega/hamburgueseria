@@ -207,53 +207,53 @@ main section .underline hr {
     top: -0.063em;
 }
 
-.blog {
+.blog  {
     display: flex;
     flex-wrap: wrap;
-
 }
 
 
-.blog article {
+#ourblogs article {
     width: 30%;
     height: 100px;
     background-color: white;
-    margin: 1.5%;
+    margin: 0 auto;
+    position: relative;
 }
 
-.blog article .fecha {
+#ourblogs article .fecha {
     background-color:var(--color-principal);
     color: white;
-    padding: 15px;
+    padding: 18px;
     width: 65px;
     border-radius: 10%;
     position: absolute;
-    top: 275px;
-    left: 185px;
+    top: -1px;
+    left: -1px;
     text-align: center;
-        }
+    }
 
-.blog article .fecha1 {
+ #ourblogs article .fecha1 {
     background-color:var(--color-principal);
     color: white;
-    padding: 15px;
+    padding: 18px;
     width: 65px;
     border-radius: 10%;
     position: absolute;
-    top: 275px;
-    left: 545px;
+    top: -1px;
+    left: -1px;
     text-align: center;
 }
 
-.blog article .fecha2 {
+#ourblogs article .fecha2 {
     background-color:var(--color-principal);
     color: white;
-    padding: 15px;
+    padding: 18px;
     width: 65px;
     border-radius: 10%;
     position: absolute;
-    top: 275px;
-    left: 910px;
+    top: -1px;
+    left: -1px;
     text-align: center;
 }
 
@@ -291,4 +291,8 @@ main section .underline hr {
 
 /* media queries blog */
 
-
+@media(max-width: 768px) {
+    .blog article {
+        width: 48%;
+    }
+}
