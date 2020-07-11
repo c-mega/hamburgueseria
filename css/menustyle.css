@@ -27,8 +27,12 @@ body {
     font-size: 1em;
 }
 
+.maincontainer {
+    height: 100vh;
+}
+
 img { /* poner esta regla para las imgs siempre, para que se conviertan en elem en bloque */
-    width: 100%;
+    width: 80%;
     height: auto;
     display: block;
 }
@@ -251,12 +255,15 @@ main .first .underline hr {
     transition: 1s;
 }
 
-section article {  /* esto es luego donde hay que poner display block */
+section {
+    padding-left: 20vw;
+}
+section article {  
     display: block;
 }
 
 section article {
-    padding: 30px 40px;
+    padding: 0.4em;
 }
 
 section article h3 {
@@ -285,7 +292,7 @@ section article p {
 section article hr {
     width: 15%;
     margin-left: 5px;
-    color: var(--color-principal)
+    color: var(--color-principal);
 }
 
 .boton {
@@ -295,7 +302,7 @@ section article hr {
     color: var(--color-principal);
 }
 
-section article .quitar {
+section article .retura {
     margin-top: -20px;
 }
 /* medias queries */
@@ -306,4 +313,47 @@ section article .quitar {
     }
 }
 
-/* media queries */
+/* media queries desktop */
+
+@media (min-width:48.000em) {
+    header .hamburguesa {
+        display: none;
+    }
+
+    header nav ul{
+        width: auto;
+        display: flex;
+    }
+
+    header nav ul li a {
+        padding: 5px 20px;
+        border-bottom: 1%;
+    }
+
+    .row {
+        display: flex;
+    }
+    .uno {
+         flex:20%;
+    }
+    .uno p {
+        text-align: justify;
+    }
+
+    .dos {
+        flex: 45%;
+    }
+
+    .dos article{
+        margin: 10px 10px;
+        display: flex;
+    }
+
+    .dos img {
+        width: 20vw;
+    }
+    
+    section {
+        padding-left: 0vw;
+    }
+}
