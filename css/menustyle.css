@@ -33,7 +33,7 @@ img { /* poner esta regla para las imgs siempre, para que se conviertan en elem 
     display: block;
 }
 
-.container { /* para todos los containers */
+.container .maincontainer { /* para todos los containers */
     max-width: var(--anchoMaximo);
     margin: 0 auto;
 }
@@ -166,3 +166,144 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu�
         border-bottom: 0px;
     }
 }
+
+/* Inicio Main */
+
+
+
+main .first h4 {
+    color: black;
+    font-family: var(--fuenteSecundaria);
+    font-size: 2em;
+    text-align: center;
+    padding: 10px;
+}
+
+main .first h4 span {
+    color: var(--color-principal);
+}
+
+main .first .underline {
+    position: relative;
+    width: 5em;
+    margin: 0 auto;
+    color: var(--color-principal);
+    font-weight: bold;
+    margin-bottom: 1em;
+    margin-top: 0.1em;
+    text-align: center;
+}
+
+main .first .underline hr {
+    border-color: var(--color-principal);
+    position: absolute;
+    width: 100%;
+    top: -0.063em;
+}
+
+ .first .cont{
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+.first .cont ul{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.first .cont ul li a{ /* donde están los items */
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+    transition: 1s;
+}
+
+
+
+.first .cont ul li a:hover{
+    color: var(--color-secundario)
+
+}
+
+.dosactivo {
+    display: inline-block; /* se comporta como en bloque pero apareciendo como en línea */
+    background-color: var(--color-principal);
+    color: white;
+    padding: 1.15em;
+    text-decoration: none;
+    margin: 1em 0;
+    border: 1px solid var(--color-principal);
+}
+
+.dosactivo:hover {
+    background-color: transparent;
+    color: var(--color-principal);
+}
+
+.bdosactivooton i {
+    transition: transform 0.5s;
+}
+
+.dosactivo:hover i {
+    transform: translateX(5px);
+    transition: 1s;
+}
+
+section article {  /* esto es luego donde hay que poner display block */
+    display: block;
+}
+
+section article {
+    padding: 30px 40px;
+}
+
+section article h3 {
+    font-size: 1.30em;
+    font-family: var(--fuenteSecundaria);
+    padding: 0.2em;
+}
+
+section article .precio {
+    font-size: 0.9em;
+    font-family: var(--fuenteSecundaria);
+    padding-right: 0.2em;
+    color: var(--color-principal);
+    display: inline;
+
+}
+
+section article p {
+    font-size: 0.9em;
+    font-family: var(--fuentePrincipal);
+    padding: 0.2em;
+}
+
+
+
+section article hr {
+    width: 15%;
+    margin-left: 5px;
+    color: var(--color-principal)
+}
+
+.boton {
+    text-decoration: none;
+    margin: 0.6em 0;
+    display: block;
+    color: var(--color-principal);
+}
+
+section article .quitar {
+    margin-top: -20px;
+}
+/* medias queries */
+
+@media (max-width: 48.000em) {
+    .retirar {
+        visibility: hidden;
+    }
+}
+
+/* media queries */
