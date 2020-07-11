@@ -151,7 +151,7 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu√
     }
 }
 
-@media(min-width: 62.750em) /* 1004px, segundo cambio*/ {
+@media(min-width: 50.000em) /* 1004px, segundo cambio*/ {
     header .hamburguesa {
         display: none;
     }
@@ -291,8 +291,17 @@ main section .underline hr {
 
 /* media queries blog */
 
-@media(max-width: 768px) {
-    .blog article {
-        width: 48%;
+@media(max-width: 50.000em) {
+
+    .quitar {
+        visibility: hidden;
+    }
+
+    #ourblogs article {
+        width: 46%;
+        height: 100px;
+        background-color: white;
+        margin: 0 auto;
+        position: relative;
     }
 }
