@@ -166,3 +166,29 @@ footer a:hover{ /* Hover es un tipo de efecto, que es el que estamos usando aqu√
         border-bottom: 0px;
     }
 }
+
+/* Inicio Main */
+
+.formulario {
+    border: 2px, solid grey;
+    float: left;
+    width: 45%;
+    margin-left: 100px;
+    text-align: center;
+    color: var(--color-secundario);
+    font-family: var(--fuenteSecundaria);
+}
+
+.mapa {
+    float: right;
+    width: 45%;
+    text-align: center;
+    font-family: var(--fuenteSecundaria);
+    color: var(--color-principal);
+
+}
+
+h1 {
+    color: var(--color-principal);
+    font-family: var(--fuenteSecundaria);
+}
