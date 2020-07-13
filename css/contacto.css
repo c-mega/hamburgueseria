@@ -192,3 +192,17 @@ h1 {
     color: var(--color-principal);
     font-family: var(--fuenteSecundaria);
 }
+
+/* Fin Main */
+
+@media (max-width:48.000em) {
+
+    .formulario {
+        margin-right: 100px;
+    }
+    
+    .mapa {
+        visibility: hidden;
+    
+    }
+}
