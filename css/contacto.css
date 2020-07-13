@@ -195,14 +195,14 @@ h1 {
 
 /* Fin Main */
 
-@media (max-width:48.000em) {
+    @media (max-width:48.000em) {
 
-   .main {
-       margin: 0 auto;
-   }
+        .formulario {
+            margin-right: 200px;
+            padding: 10px;
+        }
+        
+        .mapa {
+            visibility: hidden;
+        }
     }
-
-    .mapa {
-        visibility: hidden;
-    }
-
