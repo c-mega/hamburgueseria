@@ -197,11 +197,12 @@ h1 {
 
 @media (max-width:48.000em) {
 
-    .formulario {
-        margin-right: 100px;
+   .main {
+       margin: 0 auto;
+   }
     }
-    
+
     .mapa {
         visibility: hidden;
     }
-}
+
