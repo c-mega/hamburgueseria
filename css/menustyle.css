@@ -246,7 +246,7 @@ main .first .underline hr {
     color: var(--color-principal);
 }
 
-.bdosactivooton i {
+.dosactivo .boton i {
     transition: transform 0.5s;
 }
 
@@ -302,7 +302,7 @@ section article hr {
     color: var(--color-principal);
 }
 
-section article .retura {
+section article .retirar {
     margin-top: -20px;
 }
 /* medias queries */
